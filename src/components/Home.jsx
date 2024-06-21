@@ -4,9 +4,14 @@ const Home = () => {
   return (
     <>
       <div className='-mt-[100px] text-[#f5f5f5] max-h-[100vh] w-[100vw] z-20 absolute '>
-        <div className='flex flex-row'>
+        <div className='flex flex-row justify-between items-center align-middle'>
           <div className='flex-1 font-fira text-[120px] ml-[40px] mb-[25px] tracking-wide text-nowrap'>
             Full-stack
+          </div>
+          <div className='flex-1  mx-[15rem]  mb-[25px]'>
+            <div className='font-open-sans italic font-thin text-[40px] rounded-full border-2 border-[#f5f5f5] bg-[#f5f5f5] text-black px-20 py-2 hover:bg-green-200 duration-300 ease-in-out hover:scale-105 hover:scale-x-125 hover:cursor-pointer'>
+              Projects
+            </div>
           </div>
         </div>
         <div className='flex flex-row justify-end right-0 items-center ml-[60px]'>

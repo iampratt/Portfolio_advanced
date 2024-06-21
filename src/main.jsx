@@ -4,6 +4,7 @@ import './index.css';
 import {
   createBrowserRouter,
   createRoutesFromElements,
+  Navigate,
   Route,
   RouterProvider,
 } from 'react-router-dom';
@@ -15,11 +16,12 @@ import Contact from './components/Contact';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout />}>
-      <Route path='' element={<Home />} />
+    <Route element={<Layout />}>
+      <Route path='home' element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='projects' element={<Projects />} />
       <Route path='contact' element={<Contact />} />
+      <Route path='*' element={<Navigate to='home' />} />
     </Route>
   )
 );
